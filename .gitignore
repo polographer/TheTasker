@@ -3,6 +3,8 @@
 db/*.sqlite3
 log/*.log
 tmp/
+#other
+.rvmrc
 ###########Rails
 *.rbc
 *.sassc
