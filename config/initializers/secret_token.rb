@@ -4,4 +4,4 @@
 # If you change this key, all old signed cookies will become invalid!
 # Make sure the secret is at least 30 characters and all random,
 # no regular words or you'll be exposed to dictionary attacks.
-TheTasker::Application.config.secret_token = '0fb67b78e6fed04da3a8e60ef87b65d2a1c882aeaffc194804df7a095213db61310264a815725a43247760f629fc12ff93b405ea8a77618bffa78f1e4c28cb02'
+TheTasker::Application.config.secret_token = '1fd5519b57fb4372394f3fba7890fb42a5e1c36c6da6a53b0844a2a4f6041d33a6769de9cf3cb3f572dd26ef12bd87ec6afefc39850cd9b49700ab4585385315'

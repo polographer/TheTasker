@@ -1,0 +1,57 @@
+<%= form_for(@task) do |f| %>
+  <% if @task.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@task.errors.count, "error") %> prohibited this task from being saved:</h2>
+
+      <ul>
+      <% @task.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+  <div class="type">
+    <%= f.label :task_type %><br />
+    <%= select_tag :task_type, options_for_select({ "MySQL Task" => "MysqlTask", "FTP Task" => "FtpTask" }, "MySQL Task") %>
+  </div>
+
+  <div class="field">
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :runat %><br />
+    <%= f.datetime_select :runat %>
+  </div>
+  <div class="field">
+    <%= f.label :server %><br />
+    <%= f.text_field :server %>
+  </div>
+  <div class="field">
+    <%= f.label :login %><br />
+    <%= f.text_field :login %>
+  </div>
+  <div class="field">
+    <%= f.label :password %><br />
+    <%= f.text_field :password %>
+  </div>
+  <div class="field">
+    <%= f.label :sql %><br />
+    <%= f.text_area :sql %>
+  </div>
+  <div class="field">
+    <%= f.label :fields %><br />
+    <%= f.text_area :fields %>
+  </div>
+  <div class="field">
+    <%= f.label :files %><br />
+    <%= f.text_area :files %>
+  </div>
+  <div class="field">
+    <%= f.label :path %><br />
+    <%= f.text_field :path %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

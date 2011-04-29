@@ -1,0 +1,55 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Class Type:</b>
+  <%= @task.class %>
+</p>
+
+<p>
+  <b>Name:</b>
+  <%= @task.name %>
+</p>
+
+<p>
+  <b>Runat:</b>
+  <%= @task.runat %>
+</p>
+
+<p>
+  <b>Server:</b>
+  <%= @task.server %>
+</p>
+
+<p>
+  <b>Login:</b>
+  <%= @task.login %>
+</p>
+
+<p>
+  <b>Password:</b>
+  <%= @task.password %>
+</p>
+
+<p>
+  <b>Sql:</b>
+  <%= @task.sql %>
+</p>
+
+<p>
+  <b>Fields:</b>
+  <%= @task.fields %>
+</p>
+
+<p>
+  <b>Files:</b>
+  <%= @task.files %>
+</p>
+
+<p>
+  <b>Path:</b>
+  <%= @task.path %>
+</p>
+
+
+<%= link_to 'Edit', edit_task_path(@task) %> |
+<%= link_to 'Back', tasks_path %>

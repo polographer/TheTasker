@@ -1,0 +1,23 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  name: MyString
+  runat: 2011-04-29 12:52:52
+  server: MyString
+  login: MyString
+  password: MyString
+  sql: MyText
+  fields: MyText
+  files: MyText
+  path: MyString
+
+two:
+  name: MyString
+  runat: 2011-04-29 12:52:52
+  server: MyString
+  login: MyString
+  password: MyString
+  sql: MyText
+  fields: MyText
+  files: MyText
+  path: MyString
