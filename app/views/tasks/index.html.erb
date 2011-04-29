@@ -1,5 +1,5 @@
 <h1>Listing tasks</h1>
-
+All tasks ignoring type
 <table>
   <tr>
     <th>Name</th>
@@ -18,6 +18,81 @@
   </tr>
 
 <% @tasks.each do |task| %>
+  <tr>
+    <td><%= task.name %></td>
+    <td><%= task.task_type %></td>
+    <td><%= task.runat %></td>
+    <td><%= task.server %></td>
+    <td><%= task.login %></td>
+    <td><%= task.password %></td>
+    <td><%= task.sql %></td>
+    <td><%= task.fields %></td>
+    <td><%= task.files %></td>
+    <td><%= task.path %></td>
+    <td><%= link_to 'Show', task %></td>
+    <td><%= link_to 'Edit', edit_task_path(task) %></td>
+    <td><%= link_to 'Destroy', task, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+<br/>
+<br/>
+
+Mysql taks only
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Class Type</th>
+    <th>Runat</th>
+    <th>Server</th>
+    <th>Login</th>
+    <th>Password</th>
+    <th>Sql</th>
+    <th>Fields</th>
+    <th>Files</th>
+    <th>Path</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+<% @mysql_tasks.each do |task| %>
+  <tr>
+    <td><%= task.name %></td>
+    <td><%= task.task_type %></td>
+    <td><%= task.runat %></td>
+    <td><%= task.server %></td>
+    <td><%= task.login %></td>
+    <td><%= task.password %></td>
+    <td><%= task.sql %></td>
+    <td><%= task.fields %></td>
+    <td><%= task.files %></td>
+    <td><%= task.path %></td>
+    <td><%= link_to 'Show', task %></td>
+    <td><%= link_to 'Edit', edit_task_path(task) %></td>
+    <td><%= link_to 'Destroy', task, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+<br/>
+<br/>
+Ftp tasks only
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Class Type</th>
+    <th>Runat</th>
+    <th>Server</th>
+    <th>Login</th>
+    <th>Password</th>
+    <th>Sql</th>
+    <th>Fields</th>
+    <th>Files</th>
+    <th>Path</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+<% @ftp_tasks.each do |task| %>
   <tr>
     <td><%= task.name %></td>
     <td><%= task.task_type %></td>

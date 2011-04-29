@@ -3,6 +3,9 @@ class TasksController < ApplicationController
   # GET /tasks.xml
   def index
     @tasks = Task.all
+    @mysql_tasks = MysqlTask.all
+    @ftp_tasks = FtpTask.all
+    
 
     respond_to do |format|
       format.html # index.html.erb

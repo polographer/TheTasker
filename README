@@ -3,3 +3,9 @@ A simple example of STI on Rails 3
 this app is released as it is
 
 http://www.zerokernel.com
+
+Read more about STI
+
+http://juixe.com/techknow/index.php/2006/06/03/rails-single-table-inheritance/
+http://code.alexreisner.com/articles/single-table-inheritance-in-rails.html
+
